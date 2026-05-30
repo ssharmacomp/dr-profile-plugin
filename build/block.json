@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "niyo/dr-profile",
+  "title": "Doctor Profile Card",
+  "category": "widgets",
+  "icon": "id",
+  "attributes": {
+    "imageUrl": {
+      "type": "string"
+    },
+    "imageId": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string",
+      "default": "Dr. Name"
+    },
+    "credentials": {
+      "type": "string",
+      "default": "(Credentials)"
+    },
+    "details": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "aboutText": {
+      "type": "string"
+    },
+    "isExpandedByDefault": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

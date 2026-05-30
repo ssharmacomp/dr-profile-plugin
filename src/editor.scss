@@ -1,0 +1,80 @@
+.dr-profile-card-edit {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+
+    .profile-header {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+
+        .profile-image-wrap {
+            flex-shrink: 0;
+            width: 200px;
+
+            .button {
+                width: 100%;
+                text-align: center;
+                display: block;
+                padding: 20px 10px;
+            }
+
+            .image-button {
+                padding: 0;
+                border: none;
+                background: none;
+                cursor: pointer;
+                width: 100%;
+                display: block;
+                img {
+                    border-radius: 12px;
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
+
+        .profile-info {
+            flex-grow: 1;
+
+            .components-base-control {
+                margin-bottom: 15px;
+            }
+
+            .dr-name-input input {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .dr-details-input {
+                min-height: 80px;
+                border: 1px dashed #ccc;
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .dashed-divider {
+        border-top: 1px dashed #ccc;
+        margin: 30px 0;
+    }
+
+    .profile-about {
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .dr-about-input {
+            min-height: 150px;
+            border: 1px dashed #ccc;
+            padding: 10px;
+        }
+    }
+}
